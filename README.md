@@ -21,49 +21,31 @@ The API endpoint returns JSON documents like these:
 
 ```javascript
 [
-
- {
-
- _id: 377078,
- key: null,
- name: "Potsdam",
- fullName: "Potsdam, Germany",
- iata_airport_code: null,
- type: "location",
- country: "Germany",
-
- geo_position: {
- latitude: 52.39886,
- longitude: 13.06566
- },
- location_id: 377078,
- inEurope: true,
- countryCode: "DE",
- coreCountry: true,
- distance: null
- },
-
- {
- _id: 410978,
- key: null,
- name: "Potsdam",
- fullName: "Potsdam, USA",
- iata_airport_code: null,
- type: "location",
- country: "USA",
-
- geo_position: {
- latitude: 44.66978,
- longitude: -74.98131
- },
-
- location_id: 410978,
- inEurope: false,
- countryCode: "US",
- coreCountry: false,
- distance: null
- }
- ]
+{
+ "_id":314827,
+ "key":null,
+ "name":"Berlin Schönefeld",
+ "fullName":"Berlin Schönefeld (SXF), Germany",
+ "iata_airport_code":"SXF",
+ "type":"airport",
+ "country":"Germany",
+"geo_position":{
+				"latitude":52.3887261,
+				"longitude":13.5180874},
+ "locationId":null,
+ "inEurope":true,
+ "countryId":56,
+ "countryCode":"DE",
+ "coreCountry":true,
+ "distance":null,
+"names":{
+		 "es":"Berlín-Schönefeld",
+		 "it":"Berlino Schönefeld",
+		 "ca":"Berlín-Schönefeld",
+		 "nl":"Berlijn Schönefeld"},
+"alternativeNames":{}
+}
+]
 ```
 
 The endpoint always responds with a JSON array that contains JSON objects as elements. Each object, among other keys, has a name and a geo_position key.
